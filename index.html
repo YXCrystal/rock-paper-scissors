@@ -1,8 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src="index.js"></script>
+        <title>Rock, Paper, Scissors</title> 
+        <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         
     </head>
     <body>
+        <div class="container">
+            <h1 class="score">Round: <span id='round'>0</span></h1>
+            <a href='#' id="reset">Reset</a>
+            <h1 class="score__message">&nbsp</h1>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h2 class="players">Player: <span id="player-score">0</span></h2>
+                    <div class="players__player">
+                        <img id='player' src="/images/question-mark.png" alt="" class="players__image">
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <h2 class="players">Computer: <span id="computer-score">0</span></h2>
+                    <div class="players__player">
+                        <img id='computer' src="/images/question-mark.png" alt="" class="players__image">
+                    </div>
+                </div>
+            </div>
+            <div class="choices">
+                <img id="rock" src="./images/rock-left.png" alt="rock" class="choices__btn">
+                <img id="paper" src="./images/paper-left.png" alt="paper" class="choices__btn">
+                <img id="scissors" src="./images/scissors-left.png" alt="scissors" class="choices__btn">
+            </div>
+        </div>
     </body>
+    <script type="text/javascript" src="index.js"></script>
 </html>
