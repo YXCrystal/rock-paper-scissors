@@ -101,8 +101,8 @@ function reset() {
     player = 0;
     computer = 0;
     round = 0;
-    playerSelection.src = '/images/question-mark.png'
-    computerSelection.src = 'images/question-mark.png'
+    playerSelection.src = './images/question-mark.png'
+    computerSelection.src = './images/question-mark.png'
     playerScore.textContent = 0;
     computerScore.textContent = 0;
     scoreMessage.innerHTML = '&nbsp';
